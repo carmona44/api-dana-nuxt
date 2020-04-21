@@ -14,6 +14,14 @@
 
 <script>
 export default {
+    head () {
+        return {
+            title: 'Superheroes | Probando',
+            meta: [
+                { name: 'description', content: 'Listado de superheroes' }
+            ]
+        }
+    },
     computed: {
         superheroes () {
             return this.$store.state.superheroes.all;

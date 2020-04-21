@@ -1,8 +1,12 @@
 export const state = () => ({
-    all: [
-        {id: 'españa', latitud: 2, longitud: 5},
-        {id: 'francia', latitud: 3, longitud: 4},
-        {id: 'alemania', latitud: 1, longitud: 1},
-        {id: 'portugal', latitud: 10, longitud: 12}
-    ]
+    
 });
+
+export const actions = {
+
+    /*async GET_PAISES ({ commit }) {
+        const { data } = await axios.get('http://localhost:3000/country');
+        commit('SET_PAISES', data);
+    }*/
+
+}

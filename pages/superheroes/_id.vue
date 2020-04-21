@@ -24,6 +24,14 @@ export default {
       id: this.$route.params.id
     }
   },
+  head () {
+    return {
+      title: `${this.superheroe.id.toUpperCase()} | Probando`,
+      meta: [
+        { name: 'description', content: this.superheroe.id }
+      ]
+    }
+  },
   computed: {
     superheroe () {
       return this.$store.state.superheroes.all.find(sh => sh.id === this.id);

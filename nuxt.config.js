@@ -38,7 +38,12 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxt/http',
   ],
+  
+  http: {
+    // proxyHeaders: false
+  },
   /*
   ** Build configuration
   */
