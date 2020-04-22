@@ -40,7 +40,7 @@ export default {
   },
   computed: {
     otrosPaises () {
-      return this.paises.filter(sh => sh.id !== this.id);
+      return this.paises.filter(sh => sh._id !== this.id);
     }
   },
   async fetch() {
